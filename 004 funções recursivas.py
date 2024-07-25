@@ -18,13 +18,13 @@ def main():
     print(f"{maior=}")
 
 def soma_recursiva(arr):
-    if len(arr) == 0:
+    if arr == []:
         return 0
     else:
         return arr[0] + soma_recursiva(arr[1:])
     
 def conta_items_recursiva(arr):
-    if len(arr) == 0:
+    if arr == []:
         return 0
     else:
         return 1 + conta_items_recursiva(arr[1:])
